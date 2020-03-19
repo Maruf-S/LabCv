@@ -4,6 +4,36 @@
 }
 
 
+@keyframes wiggle {
+    0% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(9deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: skew(0deg) rotate(0deg);
+    }
+    25% {
+        transform: skew(0.3deg) rotate(0.3deg);
+    }
+    50% {
+        transform: skew(0deg) rotate(0deg);
+    }
+    75% {
+        transform: skew(-0.3deg) rotate(-0.3deg);
+    }
+    100% {
+        transform: skew(0deg) rotate(0deg);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -149,6 +179,9 @@ body {
     bottom: -1.5rem;
 }
 
+.flag:hover {
+    animation: wave 1.5s infinite linear;
+}
 
 .flag .one-third-rows {
     height: 33.3%;
