@@ -1,0 +1,255 @@
+@font-face {
+    src: url("myfont.ttf");
+    font-family: myfont;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    /*sets the padding to be inside the witdth and height*/
+    text-decoration: none;
+    list-style-type: none;
+    font-family: myfont;
+}
+
+body {
+    background: linear-gradient(to bottom right, #fefefe, #e0e0e0);
+    height: 100vh;
+}
+
+.wrapper {
+    overflow-y: auto;
+    width: 100%;
+    height: calc(100vh - 75px);
+}
+
+
+.box-main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100vh - 75px);
+    overflow-y: visible;
+}
+
+.box-sub {
+    margin: 0 5px;
+    background: #fff;
+    height: 420px;
+    padding: 4px 8px;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+    position: relative;
+    width: 100%;
+}
+
+.box-sub a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.flags-box {
+    background: url("flags-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box-sub .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    z-index: 0;
+
+}
+
+.box-sub:hover {
+    background-size: 200%;
+
+}
+
+.box-sub a:hover>.overlay {
+    background: rgba(0, 0, 0, 0.7);
+
+}
+
+.box-sub a:hover>.top-text span {
+    animation: wiggle 1.5s infinite linear;
+
+}
+
+.box-sub a .bottom-text {
+    color: #fff;
+    z-index: 3;
+    margin-top: auto;
+}
+
+.box-sub a .top-text {
+    font-weight: 900;
+    color: #fff;
+    z-index: 3;
+    font-size: 1.3rem;
+}
+
+.box-sub a .top-text span {
+    font-size: 3rem;
+    display: inline-block;
+    transform: rotate(5deg);
+}
+
+.tictactoe {
+    background: url("tic-tac-toe-board.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.work-sections {
+    height: calc(100vh - 75px);
+    overflow-y: visible;
+}
+
+.work-sections .section-header {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.flags-container {
+    width: auto;
+    margin: 0 auto;
+}
+
+.flag {
+    position: relative;
+    height: 200px;
+    width: 30%;
+    min-width: 380px;
+    margin: 1.5% 1.5%;
+    display: inline-block;
+    transform-origin: left top;
+    transform-style: preserve-3d;
+    transform-box: border-box;
+    border: 1px solid #000;
+    border-left: 12px solid silver;
+}
+
+.flag .country-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: -1.5rem;
+}
+
+
+.flag .one-third-rows {
+    height: 33.3%;
+    width: 100%;
+    position: absolute;
+}
+
+.flag .full {
+    width: 100%;
+    height: 198px;
+}
+
+.flag .center-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 33.3%;
+    right: 0;
+}
+
+.flag .one-third-rows:nth-child(2) {
+    top: 33.3%;
+}
+
+.flag .one-third-rows:nth-child(3) {
+    bottom: 0%;
+}
+
+.flag .one-third-columns {
+    position: absolute;
+    width: 33.3%;
+    height: 198px;
+}
+
+.flag .one-third-columns:nth-child(2) {
+    left: 33.3%;
+}
+
+.flag .one-third-columns:nth-child(3) {
+    right: 0%;
+}
+
+.flag .half-columns {
+    height: 198px;
+    width: 50%;
+    position: absolute;
+}
+
+.flag .half-columns:nth-child(2) {
+    left: 50%;
+}
+
+.stay-ontop {
+    z-index: 4;
+}
+
+.flag .half-rows {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+}
+
+.flag .half-rows:nth-child(2) {
+    bottom: 0%;
+}
+
+.flag .half-rows.bottom-row {
+    bottom: 0;
+}
+
+.flag .half-rows.top-row {
+    top: 0;
+}
+
+.flag .red {
+    background-color: #ce0000;
+}
+
+.flag .blue-black {
+    background-color: #002a79;
+}
+
+.flag .light-orange {
+    background-color: #ffaa0d;
+}
+
+.flag .black {
+    background-color: #111111;
+}
+
+.flag .yellow {
+    background-color: #fbff00;
+}
+
+.flag .dark-green {
+    background-color: #008a07;
+}
+
+.flag .green {
+    background-color: #00a508;
+}
