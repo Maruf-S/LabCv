@@ -56,6 +56,48 @@ body {
     height: calc(100vh - 75px);
 }
 
+.navbar {
+    z-index: 10;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    background: #00558d;
+    background: linear-gradient(to right, #0070bb, #00558d, #0070bb);
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar .logo {
+    color: #fff;
+    float: left;
+    font-size: 3rem;
+    line-height: 70px;
+    width: 200px;
+    background-color: rgba(0, 59, 148, 0.5);
+    border-right: 3px solid #fff;
+    padding-left: 15px;
+}
+
+.navbar ul {
+    float: right;
+    line-height: 70px;
+}
+
+.navbar li {
+    display: inline-block
+}
+
+.navbar li a {
+    color: #fff;
+    display: block;
+    width: 100px;
+    text-align: center;
+    border-right: 1px solid #00375c;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    background: rgba(0, 0, 0, 0.2);
+}
 
 .box-main {
     margin-top: 20px;
