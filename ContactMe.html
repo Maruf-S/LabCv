@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            Maruf<span>s</span>
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="ContactMe.html" class="active">Contact</a>
+            </li>
+            <li>
+                <a href="blogs.html">My Blog</a>
+            </li>
+            <li>
+                <a href="mywork.html">My works</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="Wrapper">
+        <div id="section1">
+            <p>
+                Hey there – thanks for visiting! I’m stoked that you’d like to get in touch with me.
+            </p>
+            <p>
+                However, because of my commitment to spending the majority of my time Learning and working, and because of the volume of email I already receive, email isn’t the best way to contact me if you have a question or are reaching out for something that isn’t business-related.
+            </p>
+            <p>
+                Here are a couple of better options:
+                <ul>
+                    <li>Got a question? Ask me on <a href="https://www.quora.com/profile/Maruf-Sherefa">Quora.</a></li>
+                    <li>Want to say hi? Hit me up on <a href="https://twitter.com/Maruf58042975">Twitter</a> or <a href="https://www.instagram.com/maroonfifth/">Instagram.</a></li>
+                </ul>
+            <p>
+                If you’re reaching out to talk about speaking, business, or something media-related, you can use this form and I’ll get back to you as soon as I can.
+            </p>
+            </p>
+        </div>
+        <div id="section2">
+            <form action="POST">
+                <Label for="Name">NAME</Label>
+                <input type="text" name="Name"  required pattern="^[\p{L} \.’\-]+$" required>
+                <Label for="Email">EMAIL</Label>
+                <input type="email" name="Email"  required> 
+                <label for="Subject" >SUBJECT</label>
+                <select id="Subject"required >
+                    <option>Speaking Inquiry</option>
+                    <option>General Media Inquiry</option>
+                    <option>Business Inquiry</option>
+                </select>
+                <label for="Messege">YOUR MESSAGE</label>
+                <textarea name="Messege" placeholder="Write something interesting here..." required></textarea>
+                <input type="Submit" value="Submit" >
+
+
+            </select>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
