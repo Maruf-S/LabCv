@@ -2,77 +2,95 @@
 <html>
 
 <head>
-    <title>Flags</title>
+    <title>My Blogs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style type="text/css">.date-posted span{
+        text-transform: uppercase;
+    }</style>
 </head>
 
 <body>
-
+    <div>
         <nav class="navbar">
-        <div class="logo">
-            Maruf<span>s</span>
-        </div>
-        <ul>
-            <li>
-                <a href="index.html" class="active">Home</a>
-            </li>
-            <li>
-                <a href="gallery.html">Gallery</a>
-            </li>
-            <li>
-                <a href="ContactMe.html">Contact</a>
-            </li>
-            <li>
-                <a href="blogs.html">My Blog</a>
-            </li>
-            <li>
-                <a href="mywork.html">My works</a>
-            </li>
-        </ul>
-    </nav>
+            <div class="logo">Maruf<span>s</span></div>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="ContactMe.html" >Contact</a>
+                </li>
+                <li>
+                    <a href="blogs.html" class="active">My Blog</a>
+                </li>
+                <li>
+                    <a href="mywork.html">My works</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <div class="wrapper">
         <div class="blog-container">
             <header class="blog-title">The benfit of using relative size</header>
             <div class="blog-content">
-                <p class="blog-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-                <p class="blog-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-                <p class="blog-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-                <p class="blog-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                <p class="blog-text">
+                    Relative size units get their size from another element which in most cases is their parent for example a width value of 50% means the element should occupy fifty percent of the parent element
                 </p>
                 <p class="blog-text">
-                    Reference links, <a href="http://" target="_blank">Google Docs</a>
+                    Using relative sizes such as %, rem and em insures that the size of the elements is set relative to the browser window and is not absolute which will guarantee the elements size scales as the window is zoomed or while using a device with a smaller screen
+                    instead of overflowing in case of using percentages during seting width or height of an element and also the size of elements is relative to the amount set in default by the browser example while using rem for font-size instead of
+                    px we insure that the value is a certain amount times the default set value
                 </p>
+                <p class="blog-text">
+                    In general using relative units insures that we provide the viewer on any device a content that is not too big or small for their screen whether they are on a small screen smart watch or a large screen smart TV
+                </p>
+                <p class="blog-text">
+                    In my personal opinion, even though it is not always possible, website developers should use relative units instead of absolute values as the demand for responsive websites has increased exponentially as different sized technologies have started allowing
+                    the access of websites through them as a result older websites have seen a loss in users as people have started accessing this websites through devices which the websites were not designed to support such as smart watches on which
+                    users are forced to scroll horizontally to view the full content of their websites
+                </p>
+                <p class="blog-text">
+                    Reference links, <a href="https://joseewouters.nl/blog/the-magic-of-relative-units/" target="_blank">Link1, </a>
+                    <a href="https://thecssworkshop.com/lessons/relative-units" target="_blank">Link2.</a>
+                </p>
+                        
             </div>
-            <p class="date-posted">March 18, 2020 By Maruf Sherefa</p>
+            <p class="date-posted"><span>March 19,</span> 2020 By Maruf Sherefa</p>
         </div>
         <div class="blog-container">
             <header class="blog-title">Second Question</header>
-            <div class="blog-content"></div>
-            <p class="date-posted">March 18, 2020 By Maruf Sherefa</p>
+            <div class="blog-content">
+                    The 200px size is 12.5 times 16px size so the 
+                    item with 200px size will be shown as being 12.5 times the size of the default size.
+            </div>
+            <p class="date-posted"><span>March 19,</span> 2020 By Maruf Sherefa</p>
         </div>
         <div class="blog-container">
             <header class="blog-title">Specific changes made in CSS3</header>
             <div class="blog-content">
                 <p class="blog-text">
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."                </p>
-                <p class="blog-text">
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    CSS3 is the latest version of the css styling language which was released on
                 </p>
                 <p class="blog-text">
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    Out of the many changes made in this update the most noticable is the selectors updates which allows user to select any specific element through different parameters. In earlier versions you could use tag names, classes and IDs but now you are able to
+                    use pseudo-selectors which allow for flexablity while selecting elements like the :not :last-child and so on
                 </p>
                 <p class="blog-text">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    Another noticable change is color keywords in this version there have been 147 new color keywords and new ways of setting colors like the RGBA value which stands for Red, Green, Blue and Alpha (which specifies opacity of the color aloowing for semitransparent
+                    backgrounds). Related to color the other changes made in CSS3 are the opacity, which allows users to specify an opacity value to an element with 0 being completely transparent and 1 being completely opaque
                 </p>
                 <p class="blog-text">
-                    Reference links, <a href="http://" target="_blank">Google Docs</a>
+                    Some other changes and additions include the Border-radius property for rounded corners. Drop shadow effect with the box-shadow property as well as text shadow with the text shadow property. Set gradient background colors with the linear-gradient and
+                    radial-gradient properties. It also includes a multiple background image property.
+                </p>
+                <p class="blog-text">
+                    Reference links, <a href="https://www.bitdegree.org/learn/css3-features" target="_blank">Link1,</a>
+                    <a href="http://webreference.com/authoring/css3/index-2.html" target="_blank"> Link2.</a>
+                    
                 </p>
             </div>
-            <p class="date-posted">March 18, 2020 By Maruf Sherefa</p>
+            <p class="date-posted"><span>March 19,</span> 2020 By Maruf Sherefa</p>
         </div>
     </div>
 </body>
